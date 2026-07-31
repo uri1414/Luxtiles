@@ -104,17 +104,23 @@ the **Materials** pillar (`/materials/` hub + `glass-tile` / `natural-stone` /
 `large-format-tile`), and started **Service Areas** (`/service-areas/` hub +
 `/tile-store-los-angeles/` and `/tile-store-calabasas/` with `LocalBusiness` +
 `areaServed` schema). Upgraded the nav to Applications + Materials dropdowns and a
-Service Areas link, added a footer link nav, and listed all 14 URLs in `sitemap.xml`.
-City pages are written to be genuinely local (no doorway templating).
+Service Areas link, added a footer link nav. City pages are written to be genuinely
+local (no doorway templating).
 
-**Next (Phase 2 remainder → Phase 3), in order:**
+**Phase 3 (pages) — done:** all **Service-Area city pages** now live —
+`/tile-store-encino/`, `/tile-store-burbank/`, `/tile-store-pasadena/` (each with its
+own local content + `LocalBusiness`/`areaServed` schema) — and all four **commercial
+market pages** — `/commercial/supermarkets/`, `/apartments/`, `/hotels/`,
+`/shopping-centers/` (`Service` + `BreadcrumbList` + `FAQPage`). Linked from the
+service-areas and commercial hubs; **all 21 URLs** are in `sitemap.xml`. The site is now
+**21 pages**.
 
-1. More **city pages** — Encino, Burbank, Pasadena (unique local content each).
-2. **Commercial market pages** — supermarkets, apartments, hotels, shopping-centers.
-3. Support pages: `/projects/` portfolio (needs real photos), `/about/`, `/faq/`, and
-   the first buyer/material guides (blog).
-4. Keep adding each new URL to `sitemap.xml`; keep visible content and schema in sync.
-5. **Owner-side / post-launch:** confirm the domain, wire a real form backend, add
+**Next, in order:**
+
+1. Support pages: `/projects/` portfolio (best once real photos land), `/about/`,
+   `/faq/`, and the first buyer/material guides (blog).
+2. Keep adding each new URL to `sitemap.xml`; keep visible content and schema in sync.
+3. **Owner-side / post-launch:** confirm the domain, wire a real form backend, add
    GA4 + Search Console, and set up Google Business Profile + real reviews.
 
 See [`docs/seo/IMPLEMENTATION-ROADMAP.md`](./docs/seo/IMPLEMENTATION-ROADMAP.md) for the
