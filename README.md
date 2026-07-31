@@ -42,11 +42,13 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 Faithful to the approved homepage handoff:
 
-- **Palette:** two-tone for contrast — dark `#0d0c0a` chrome (header, hero, footer,
-  accent bands) alternating with warm ivory `#f5f1e8` "paper" sections (Applications &
-  Projects on the homepage; the reading area on interior pages). Gold accent `#c9a55c`
-  throughout, deepened to `#9a7726` on light for contrast. The light theme is a scoped
-  `.on-light` token override, so shared components restyle automatically.
+- **Palette (light theme — per the official light handoff):** warm ivory `#faf7f0`
+  page background with cream `#f2ecdf` alt sections (Applications, Projects, footer);
+  hero, Commercial, and Quote sit on ivory. Text `#2c2519` / headings `#241e13`; gold
+  accent `#a8894e`, deepened to `#8a6d35` where it needs contrast on light. Cards
+  (market, form, sticky quote, option, related, trust pills) are white with a subtle
+  shadow. Gold gradient bands (announcement, commercial, CTA) and buttons are unchanged.
+  All colors are CSS variables in `:root`, so the theme is one place to edit.
 - **Type:** Cormorant Garamond (display) + Archivo (body), via Google Fonts.
 - **Sections:** sticky header + announcement bar · hero · applications · commercial
   (value band, market cards, trust pills) · projects mosaic · quote + contact · footer.
