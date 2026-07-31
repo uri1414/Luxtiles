@@ -69,6 +69,13 @@ These are intentionally NOT fabricated — swap in real values before/after laun
   pre-filled (`mailto:`). For production, wire a real form backend (form service or
   API endpoint + email notification).
 
+## SEO plan
+
+The full strategic SEO plan lives in **[`docs/seo/`](./docs/seo/)** — strategy, site
+structure, competitor analysis, content calendar, and a 4-phase implementation roadmap
+(produced with the `seo-plan` skill + our Local SEO Playbook). Start with
+[`docs/seo/SEO-STRATEGY.md`](./docs/seo/SEO-STRATEGY.md).
+
 ## Next steps (SEO playbook)
 
 Highest-leverage additions, in order:
