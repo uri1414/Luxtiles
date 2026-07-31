@@ -42,7 +42,11 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 Faithful to the approved homepage handoff:
 
-- **Palette:** page `#0d0c0a`, gold accent `#c9a55c`, gold gradient CTAs/bands.
+- **Palette:** two-tone for contrast — dark `#0d0c0a` chrome (header, hero, footer,
+  accent bands) alternating with warm ivory `#f5f1e8` "paper" sections (Applications &
+  Projects on the homepage; the reading area on interior pages). Gold accent `#c9a55c`
+  throughout, deepened to `#9a7726` on light for contrast. The light theme is a scoped
+  `.on-light` token override, so shared components restyle automatically.
 - **Type:** Cormorant Garamond (display) + Archivo (body), via Google Fonts.
 - **Sections:** sticky header + announcement bar · hero · applications · commercial
   (value band, market cards, trust pills) · projects mosaic · quote + contact · footer.

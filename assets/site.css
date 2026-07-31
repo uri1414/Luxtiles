@@ -398,8 +398,49 @@ footer.site .fright a:hover{color:var(--gold-light)}
 .cta-strip{background:var(--band-grad)}
 .cta-strip .inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:30px 0}
 .cta-strip .t{font-family:var(--font-display);font-size:26px;color:var(--ink);font-weight:600;max-width:24ch}
-.cta-strip .btn{background:var(--ink);color:var(--gold-light);border-color:var(--ink)}
-.cta-strip .btn:hover{filter:brightness(1.15);color:var(--gold-light)}
+.cta-strip .btn{background:var(--ink);color:#e6ca8a;border-color:var(--ink)}
+.cta-strip .btn:hover{filter:brightness(1.15);color:#e6ca8a}
+
+/* ============================================================
+   Light "paper" theme — warm ivory sections for contrast.
+   Scopes token overrides so shared components adapt automatically.
+   ============================================================ */
+.on-light{
+  --bg:#ffffff;
+  --bg-alt:#efe9dd;
+  --text:#463f34;
+  --heading:#1e1a13;
+  --muted:#8a8073;
+  --muted-2:#6a6153;
+  --muted-3:#463f34;
+  --nav:#39332b;
+  --gold:#9a7726;
+  --gold-light:#836420;
+  --gold-soft:#836420;
+  --hair:rgba(40,30,10,0.12);
+  --hair-2:rgba(40,30,10,0.16);
+  --hair-3:rgba(40,30,10,0.22);
+  --edge:rgba(154,119,38,0.55);
+  --edge-strong:rgba(154,119,38,0.6);
+  --gold-fill:rgba(201,165,92,0.10);
+  background:#f5f1e8;
+  color:var(--text);
+}
+/* Cards lift to white for pop on ivory */
+.on-light .opt-card,
+.on-light .related a,
+.on-light .market-card,
+.on-light .form-card,
+.on-light .aside-card{
+  background:#fff;
+  box-shadow:0 1px 2px rgba(30,20,8,.05), 0 12px 26px -20px rgba(30,20,8,.30);
+}
+.on-light .field input,
+.on-light .field select,
+.on-light .field textarea{background:#fff}
+.on-light .form-error{color:#b23a24}
+/* Full-width light band with hairline separators (homepage) */
+.section-light{border-top:1px solid var(--hair-2);border-bottom:1px solid var(--hair-2)}
 
 /* ============================================================
    Responsive
