@@ -15,12 +15,12 @@ Local SEO Playbook. Companion docs: `SITE-STRUCTURE.md`, `COMPETITOR-ANALYSIS.md
 | | |
 |---|---|
 | **Business** | Lux Tiles & Stones — premium tile & natural stone **supplier** (glass tile blends, natural stone, large-format surfaces) |
-| **Model** | Wholesale/builder pricing + **free delivery to job site**; effectively a Service-Area Business across Greater LA |
+| **Model** | Wholesale/builder pricing + **job-site delivery**; effectively a Service-Area Business across Greater LA |
 | **Audiences** | (1) Homeowners & designers (residential: kitchens, baths, pool/spa, feature walls); (2) Builders/GCs & commercial buyers (supermarkets, apartments, hotels, shopping centers) |
 | **Service area** | Greater Los Angeles — named cities: Los Angeles/DTLA, Calabasas, Encino, Burbank, Pasadena (expand deliberately) |
 | **Primary goal** | Qualified leads: quote-form submissions + phone calls to Danny (818) 334-0960 |
 | **Secondary** | Brand searches, Instagram follows (@luxtiles_sales), repeat builder relationships |
-| **Differentiators** | Wholesale pricing, free job-site delivery, 1,000+ projects supplied, one partner for residential **and** commercial, insured |
+| **Differentiators** | Wholesale pricing, job-site delivery, 1,000+ projects supplied, one partner for residential **and** commercial, insured |
 | **Constraints** | No confirmed street address / hours / license #s / reviews yet — must not be fabricated; photography pending; quote form is front-end `mailto` (no backend yet) |
 
 **KPIs:** organic leads (form + call), local-pack visibility for "tile store {city}",

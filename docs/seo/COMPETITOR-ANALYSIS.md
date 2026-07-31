@@ -12,7 +12,7 @@
 ## 1. The LA tile & stone landscape
 
 The Greater Los Angeles tile/stone market has four competitor tiers. Lux competes in
-a different lane than most: **wholesale/builder pricing + free job-site delivery +
+a different lane than most: **wholesale/builder pricing + job-site delivery +
 commercial capability**, versus retail-showroom or pure-import models.
 
 | Tier | Who | Typical strength | Where they're weak (our opening) |
@@ -65,8 +65,9 @@ city intent** ("glass tile backsplash Calabasas", "pool waterline tile Encino"),
 3. **Material education** — "glass tile vs porcelain", "large format tile pros and
    cons", "natural stone for showers". Feeds AI Overviews / ChatGPT / Perplexity
    citations and builds topical authority.
-4. **"Free delivery / wholesale" modifiers** — a genuine, ownable differentiator few
-   competitors lead with.
+4. **"Delivery / wholesale" modifiers** — job-site delivery and wholesale/builder
+   pricing are ownable differentiators few competitors lead with. (A "free delivery"
+   angle is stronger still, but only use it once the owner confirms the offer.)
 
 ## 5. E-E-A-T posture vs competitors
 
