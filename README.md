@@ -12,7 +12,13 @@ Static HTML/CSS/JS — no build step, no framework. Fast, portable, deploy-anywh
 index.html            Homepage (all sections; SEO head + LocalBusiness JSON-LD)
 kitchens/             Kitchen tile & stone service page (Service + FAQ schema)
 bathrooms/            Bathroom tile & stone service page (Service + FAQ schema)
+pool-spa/             Pool & spa tile service page (Service + FAQ schema)
+feature-walls/        Feature wall tile & stone service page (Service + FAQ schema)
+materials/            Materials hub (ItemList) + glass-tile / natural-stone /
+                      large-format-tile pages (Service + FAQ schema)
 commercial/           Commercial division hub (Service + ItemList + FAQ schema)
+service-areas/        Service-area hub (ItemList) + tile-store-los-angeles /
+                      tile-store-calabasas city pages (LocalBusiness + FAQ schema)
 contact/              Contact + quote form (ContactPage schema)
 assets/
   site.css            Design system — dark luxury palette + gold, responsive, a11y
@@ -83,17 +89,24 @@ structure, competitor analysis, content calendar, and a 4-phase implementation r
 ## Build progress (per the SEO plan)
 
 **Phase 1 — done:** homepage + `/kitchens/`, `/bathrooms/` service pages,
-`/commercial/` hub, and `/contact/`; Applications dropdown nav; each page carries the
-right schema (`Service`/`ItemList`/`ContactPage` + `BreadcrumbList` + `FAQPage`),
-breadcrumbs, and a conversion path; all URLs added to `sitemap.xml`.
+`/commercial/` hub, and `/contact/`; each page carries the right schema
+(`Service`/`ItemList`/`ContactPage` + `BreadcrumbList` + `FAQPage`), breadcrumbs, and a
+conversion path.
 
-**Next (Phase 2), in order:**
+**Phase 2 — done:** completed the Applications (`/pool-spa/`, `/feature-walls/`), added
+the **Materials** pillar (`/materials/` hub + `glass-tile` / `natural-stone` /
+`large-format-tile`), and started **Service Areas** (`/service-areas/` hub +
+`/tile-store-los-angeles/` and `/tile-store-calabasas/` with `LocalBusiness` +
+`areaServed` schema). Upgraded the nav to Applications + Materials dropdowns and a
+Service Areas link, added a footer link nav, and listed all 14 URLs in `sitemap.xml`.
+City pages are written to be genuinely local (no doorway templating).
 
-1. Remaining application pages `/pool-spa/`, `/feature-walls/`, and the `/materials/`
-   hub + `glass-tile` / `natural-stone` / `large-format-tile` pages (800w / 100% unique).
-2. **Service-area pages** for the named cities (Los Angeles, Calabasas, Encino,
-   Burbank, Pasadena) — unique local content per city, `areaServed` schema.
-3. `/projects/` portfolio, `/about/`, `/faq/`.
+**Next (Phase 2 remainder → Phase 3), in order:**
+
+1. More **city pages** — Encino, Burbank, Pasadena (unique local content each).
+2. **Commercial market pages** — supermarkets, apartments, hotels, shopping-centers.
+3. Support pages: `/projects/` portfolio (needs real photos), `/about/`, `/faq/`, and
+   the first buyer/material guides (blog).
 4. Keep adding each new URL to `sitemap.xml`; keep visible content and schema in sync.
 5. **Owner-side / post-launch:** confirm the domain, wire a real form backend, add
    GA4 + Search Console, and set up Google Business Profile + real reviews.
