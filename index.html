@@ -1,0 +1,376 @@
+<!doctype html>
+<!--
+  Lux Tiles & Stones — Homepage
+  Premium tile & stone supplier, Greater Los Angeles (residential + commercial).
+  Static marketing site. Design mirrors the approved handoff (dark luxury + gold).
+
+  PLACEHOLDERS the owner should replace before / after launch:
+    • Canonical domain — currently https://luxtilesandstones.com/ (update every absolute URL if the real domain differs).
+    • Project photography — the .img-slot blocks mark exactly where real photos drop in (see swap note in each).
+    • Physical address / hours / license #s — intentionally omitted (not provided). Add to JSON-LD when confirmed.
+    • Quote form currently opens the visitor's email app (mailto). Wire a real form backend for production.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lux Tiles &amp; Stones — Premium Tile &amp; Natural Stone in Greater Los Angeles</title>
+  <meta name="description" content="Premium glass tile, natural stone & large-format surfaces for residential & commercial projects across Greater Los Angeles. Wholesale pricing, free job-site delivery." />
+  <meta name="theme-color" content="#0d0c0a" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Lux Tiles & Stones" />
+  <link rel="canonical" href="https://luxtilesandstones.com/" />
+
+  <!-- Local / geo signals (Los Angeles, CA) -->
+  <meta name="geo.region" content="US-CA" />
+  <meta name="geo.placename" content="Los Angeles, California" />
+  <meta name="geo.position" content="34.052235;-118.243683" />
+  <meta name="ICBM" content="34.052235, -118.243683" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lux Tiles & Stones" />
+  <meta property="og:title" content="Lux Tiles & Stones — Premium Tile & Natural Stone in Greater Los Angeles" />
+  <meta property="og:description" content="Premium glass tile, natural stone, and large-format surfaces for residential and commercial projects. Wholesale pricing, free job-site delivery across Greater Los Angeles." />
+  <meta property="og:url" content="https://luxtilesandstones.com/" />
+  <meta property="og:image" content="https://luxtilesandstones.com/assets/logo.jpg" />
+  <meta property="og:image:alt" content="Lux Tiles & Stones" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lux Tiles & Stones — Premium Tile & Stone, Greater Los Angeles" />
+  <meta name="twitter:description" content="Premium glass tile, natural stone & large-format surfaces for residential and commercial projects. Wholesale pricing, free job-site delivery." />
+  <meta name="twitter:image" content="https://luxtilesandstones.com/assets/logo.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/site.css" />
+
+  <!-- Structured data. Address / opening hours / sameAs (GBP) are PLACEHOLDERS to fill when confirmed. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://luxtilesandstones.com/#business",
+        "name": "Lux Tiles & Stones",
+        "description": "Premium tile and natural stone supplier serving residential and commercial projects across Greater Los Angeles. Glass tile blends, natural stone, and large-format surfaces at wholesale pricing, with free job-site delivery.",
+        "url": "https://luxtilesandstones.com/",
+        "telephone": "+1-818-334-0960",
+        "email": "luxsurfaces661@gmail.com",
+        "image": "https://luxtilesandstones.com/assets/logo.jpg",
+        "logo": "https://luxtilesandstones.com/assets/logo.jpg",
+        "priceRange": "$$",
+        "slogan": "Luxury in every detail. Quality in every tile.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 34.052235,
+          "longitude": -118.243683
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Los Angeles, California" },
+          { "@type": "City", "name": "Calabasas, California" },
+          { "@type": "City", "name": "Encino, California" },
+          { "@type": "City", "name": "Burbank, California" },
+          { "@type": "City", "name": "Pasadena, California" },
+          { "@type": "AdministrativeArea", "name": "Greater Los Angeles" }
+        ],
+        "sameAs": [
+          "https://instagram.com/luxtiles_sales"
+        ],
+        "knowsAbout": ["Glass tile", "Natural stone", "Large-format tile", "Kitchen backsplash", "Bathroom tile", "Pool and spa tile", "Commercial tile installation"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Tile & Stone",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen Tile & Backsplash", "serviceType": "Residential tile", "description": "Glass tile blends and natural stone for kitchen backsplashes and surfaces.", "areaServed": { "@type": "AdministrativeArea", "name": "Greater Los Angeles" } } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom Tile & Stone", "serviceType": "Residential tile", "description": "Wall, floor, and shower tile and natural stone for bathrooms.", "areaServed": { "@type": "AdministrativeArea", "name": "Greater Los Angeles" } } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pool & Spa Tile", "serviceType": "Residential tile", "description": "Waterline and feature tile for pools and spas.", "areaServed": { "@type": "AdministrativeArea", "name": "Greater Los Angeles" } } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Tile Supply", "serviceType": "Commercial tile", "description": "Large-format and specialty tile for supermarkets, apartments, hotels, and shopping centers, with builder pricing and job-site delivery.", "areaServed": { "@type": "AdministrativeArea", "name": "Greater Los Angeles" } } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://luxtilesandstones.com/#website",
+        "url": "https://luxtilesandstones.com/",
+        "name": "Lux Tiles & Stones",
+        "publisher": { "@id": "https://luxtilesandstones.com/#business" },
+        "inLanguage": "en-US"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site" id="site-header">
+    <div class="announce">Wholesale Pricing · Free Delivery to Job Site · Serving Greater Los Angeles</div>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Lux Tiles &amp; Stones — home">
+          <img src="assets/logo.jpg" alt="Lux Tiles &amp; Stones logo" width="46" height="46" />
+          <span class="mark">
+            <span class="name">LUX <b>Tiles &amp; Stones</b></span>
+            <span class="slogan">Luxury · Quality · Confidence</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#applications">Applications</a>
+          <a href="#commercial">Commercial</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-gold btn-sm" href="#quote">Request a Quote</a>
+        </nav>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <a href="#applications">Applications</a>
+      <a href="#commercial">Commercial</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-gold" href="#quote">Request a Quote</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ============ HERO ============ -->
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow rule">Premium Tile &amp; Stone · Greater Los Angeles</span>
+        <h1 class="title" id="hero-title">Luxury in every detail.<br><em>Quality</em> in every tile.</h1>
+        <p class="lead">Premium glass tile blends, natural stone, and large-format surfaces for residential and commercial projects — from a single backsplash to full builds, delivered to your job site.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold btn-lg" href="#quote">Request a Quote</a>
+          <a class="btn btn-outline btn-lg" href="#projects">View Our Work</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><span class="val">1,000+</span><span class="lbl">Projects supplied</span></div>
+          <div class="stat"><span class="val">Wholesale</span><span class="lbl">Builder pricing</span></div>
+          <div class="stat"><span class="val">Free</span><span class="lbl">Job-site delivery</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="offset" aria-hidden="true"></div>
+        <div class="frame">
+          <!-- SWAP: <img class="img-fill" src="assets/hero-kitchen.webp" alt="Kitchen with a glass tile backsplash by Lux Tiles & Stones" width="640" height="520" fetchpriority="high"> -->
+          <div class="img-slot"><span>Hero photo — kitchen with glass tile backsplash</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPLICATIONS ============ -->
+    <section id="applications" class="wrap" style="padding:80px 0" aria-labelledby="apps-title">
+      <div class="section-head center" style="margin-bottom:44px">
+        <span class="eyebrow">Versatile Style</span>
+        <h2 class="title" id="apps-title">Beauty in every space</h2>
+      </div>
+      <div class="grid-4">
+        <div class="app-card">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/app-kitchens.webp" alt="Kitchen backsplash tile" width="300" height="340" loading="lazy"> -->
+            <div class="img-slot"><span>Kitchen backsplash photo</span></div>
+          </div>
+          <span class="chip">Kitchens</span>
+        </div>
+        <div class="app-card">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/app-bathrooms.webp" alt="Bathroom tile and stone" width="300" height="340" loading="lazy"> -->
+            <div class="img-slot"><span>Bathroom photo</span></div>
+          </div>
+          <span class="chip">Bathrooms</span>
+        </div>
+        <div class="app-card">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/app-pools.webp" alt="Pool waterline tile" width="300" height="340" loading="lazy"> -->
+            <div class="img-slot"><span>Pool waterline photo</span></div>
+          </div>
+          <span class="chip">Pool &amp; Spa</span>
+        </div>
+        <div class="app-card">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/app-walls.webp" alt="Feature wall tile" width="300" height="340" loading="lazy"> -->
+            <div class="img-slot"><span>Feature wall photo</span></div>
+          </div>
+          <span class="chip">Feature Walls</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMERCIAL ============ -->
+    <section id="commercial" class="section-alt" aria-labelledby="commercial-title">
+      <div class="value-band">
+        <div class="wrap inner">
+          <div class="vb-cell">
+            <span class="vb-title">Wholesale Pricing</span>
+            <span class="vb-sub">Best value. Every project.</span>
+          </div>
+          <div class="divider" aria-hidden="true"></div>
+          <div class="vb-cell">
+            <span class="vb-title">Free Delivery to Job Site</span>
+            <span class="vb-sub">We deliver. You build.</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap" style="padding:72px 0 80px">
+        <div class="section-head" style="margin-bottom:40px">
+          <span class="eyebrow">Commercial Division</span>
+          <h2 class="title" id="commercial-title" style="max-width:22ch">Specializing in large commercial tile projects</h2>
+          <p style="font-size:15px;color:var(--muted)">One partner. Every surface. Every time.</p>
+        </div>
+        <div class="grid-4">
+          <div class="market-card"><span class="name">Supermarkets</span><span class="tag">High traffic. High standards.</span></div>
+          <div class="market-card"><span class="name">Apartments</span><span class="tag">Built to last. Designed to impress.</span></div>
+          <div class="market-card"><span class="name">Hotels</span><span class="tag">Luxury that leaves a lasting impression.</span></div>
+          <div class="market-card"><span class="name">Shopping Centers</span><span class="tag">Beautiful spaces. Built for business.</span></div>
+        </div>
+        <ul class="pills">
+          <li class="pill">Large-format tile experts</li>
+          <li class="pill">Builder focused</li>
+          <li class="pill">Project support — bidding to completion</li>
+          <li class="pill">Reliable &amp; insured</li>
+          <li class="pill">Massive in-stock inventory</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="wrap" style="padding:80px 0" aria-labelledby="projects-title">
+      <div class="projects-head" style="margin-bottom:44px">
+        <div class="section-head">
+          <span class="eyebrow">Recent Projects</span>
+          <h2 class="title" id="projects-title">Big projects. Bold results.</h2>
+        </div>
+        <a class="link-arrow" href="https://instagram.com/luxtiles_sales" target="_blank" rel="noopener">See more on Instagram →</a>
+      </div>
+      <div class="mosaic">
+        <div class="tile tall">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/proj-1.webp" alt="Hotel lobby feature wall in Downtown LA" width="560" height="538" loading="lazy"> -->
+            <div class="img-slot"><span>Project photo — hotel lobby / feature wall</span></div>
+          </div>
+          <span class="chip sm">Hotel Lobby · DTLA</span>
+        </div>
+        <div class="tile">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/proj-2.webp" alt="Residential kitchen in Calabasas" width="380" height="260" loading="lazy"> -->
+            <div class="img-slot"><span>Project photo — residential kitchen</span></div>
+          </div>
+          <span class="chip sm">Kitchen · Calabasas</span>
+        </div>
+        <div class="tile">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/proj-3.webp" alt="Pool and spa waterline tile in Encino" width="380" height="260" loading="lazy"> -->
+            <div class="img-slot"><span>Project photo — pool &amp; spa</span></div>
+          </div>
+          <span class="chip sm">Pool &amp; Spa · Encino</span>
+        </div>
+        <div class="tile">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/proj-4.webp" alt="Retail flooring in Burbank" width="380" height="260" loading="lazy"> -->
+            <div class="img-slot"><span>Project photo — retail flooring</span></div>
+          </div>
+          <span class="chip sm">Retail · Burbank</span>
+        </div>
+        <div class="tile">
+          <div class="frame">
+            <!-- SWAP: <img class="img-fill" src="assets/proj-5.webp" alt="Bathroom tile in Pasadena" width="380" height="260" loading="lazy"> -->
+            <div class="img-slot"><span>Project photo — bathroom</span></div>
+          </div>
+          <span class="chip sm">Bathroom · Pasadena</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE + CONTACT ============ -->
+    <section id="quote" class="section-alt" aria-labelledby="quote-title">
+      <div class="wrap quote-grid" style="padding:80px 0">
+        <div class="quote-copy">
+          <span class="eyebrow">Request a Quote</span>
+          <h2 class="title" id="quote-title">Let's build something extraordinary together.</h2>
+          <p style="font-size:15px;line-height:1.7;color:var(--muted-2)">Tell us about your project and we'll get back to you with pricing and availability — usually the same day.</p>
+          <div class="contact-list" id="contact">
+            <a class="contact-row" href="tel:8183340960">
+              <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+              <span class="txt"><span class="k">Call or Text Danny</span><span class="v">(818) 334-0960</span></span>
+            </a>
+            <a class="contact-row" href="mailto:luxsurfaces661@gmail.com">
+              <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></span>
+              <span class="txt"><span class="k">Email</span><span class="v">luxsurfaces661@gmail.com</span></span>
+            </a>
+            <a class="contact-row" href="https://instagram.com/luxtiles_sales" target="_blank" rel="noopener">
+              <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></span>
+              <span class="txt"><span class="k">Instagram</span><span class="v">@luxtiles_sales</span></span>
+            </a>
+          </div>
+        </div>
+
+        <form class="form-card" id="quote-form" novalidate>
+          <div class="form-row">
+            <label class="field" for="f-name">Name <span class="req" aria-hidden="true">*</span>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+            </label>
+            <label class="field" for="f-phone">Phone
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(818) 555-0123" />
+            </label>
+          </div>
+          <label class="field" for="f-email">Email
+            <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+          </label>
+          <p class="form-error" id="contact-error" hidden>Please add a phone number or email so we can reach you.</p>
+          <label class="field" for="f-type">Project type
+            <select id="f-type" name="projectType">
+              <option>Residential — Kitchen / Bath</option>
+              <option>Residential — Pool &amp; Spa</option>
+              <option>Residential — Flooring</option>
+              <option>Commercial — New Build</option>
+              <option>Commercial — Renovation</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="field" for="f-msg">Project details <span class="req" aria-hidden="true">*</span>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Square footage, materials you're interested in, timeline…" required></textarea>
+          </label>
+          <button class="btn btn-gold btn-lg" type="submit">Send Quote Request</button>
+          <p class="form-note" id="form-note" hidden role="status">Opening your email app — your request is pre-filled. Or call us at (818)&nbsp;334-0960.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site" aria-labelledby="footer-name">
+    <div class="wrap inner">
+      <img src="assets/logo.jpg" alt="Lux Tiles &amp; Stones logo" width="56" height="56" />
+      <div class="section-head" style="gap:3px">
+        <span class="fname" id="footer-name">LUX Tiles &amp; Stones</span>
+        <span class="ftag">Luxury in every detail. Quality in every tile.</span>
+      </div>
+      <div class="fright">
+        <span>Serving Greater Los Angeles</span>
+        <span><a href="tel:8183340960">(818) 334-0960</a> · <a href="mailto:luxsurfaces661@gmail.com">luxsurfaces661@gmail.com</a> · <a href="https://instagram.com/luxtiles_sales" target="_blank" rel="noopener">@luxtiles_sales</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
