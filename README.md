@@ -10,6 +10,10 @@ Static HTML/CSS/JS — no build step, no framework. Fast, portable, deploy-anywh
 
 ```
 index.html            Homepage (all sections; SEO head + LocalBusiness JSON-LD)
+kitchens/             Kitchen tile & stone service page (Service + FAQ schema)
+bathrooms/            Bathroom tile & stone service page (Service + FAQ schema)
+commercial/           Commercial division hub (Service + ItemList + FAQ schema)
+contact/              Contact + quote form (ContactPage schema)
 assets/
   site.css            Design system — dark luxury palette + gold, responsive, a11y
   site.js             Mobile nav, sticky header, quote-form validation + mailto
@@ -76,14 +80,23 @@ structure, competitor analysis, content calendar, and a 4-phase implementation r
 (produced with the `seo-plan` skill + our Local SEO Playbook). Start with
 [`docs/seo/SEO-STRATEGY.md`](./docs/seo/SEO-STRATEGY.md).
 
-## Next steps (SEO playbook)
+## Build progress (per the SEO plan)
 
-Highest-leverage additions, in order:
+**Phase 1 — done:** homepage + `/kitchens/`, `/bathrooms/` service pages,
+`/commercial/` hub, and `/contact/`; Applications dropdown nav; each page carries the
+right schema (`Service`/`ItemList`/`ContactPage` + `BreadcrumbList` + `FAQPage`),
+breadcrumbs, and a conversion path; all URLs added to `sitemap.xml`.
 
-1. Dedicated **service pages** (`/kitchens/`, `/bathrooms/`, `/pool-spa/`,
-   `/commercial/`) — one page per intent, each with `Service` + `BreadcrumbList` +
-   `FAQPage` schema. Service pages are the #1 local-organic ranking factor.
-2. **Service-area pages** for the named cities (Calabasas, Encino, Burbank,
-   Pasadena) — unique local content per city, `areaServed` schema.
-3. Add each new URL to `sitemap.xml`; keep visible content and schema in sync.
-4. Post-launch: Google Business Profile, Search Console + GA4, real reviews only.
+**Next (Phase 2), in order:**
+
+1. Remaining application pages `/pool-spa/`, `/feature-walls/`, and the `/materials/`
+   hub + `glass-tile` / `natural-stone` / `large-format-tile` pages (800w / 100% unique).
+2. **Service-area pages** for the named cities (Los Angeles, Calabasas, Encino,
+   Burbank, Pasadena) — unique local content per city, `areaServed` schema.
+3. `/projects/` portfolio, `/about/`, `/faq/`.
+4. Keep adding each new URL to `sitemap.xml`; keep visible content and schema in sync.
+5. **Owner-side / post-launch:** confirm the domain, wire a real form backend, add
+   GA4 + Search Console, and set up Google Business Profile + real reviews.
+
+See [`docs/seo/IMPLEMENTATION-ROADMAP.md`](./docs/seo/IMPLEMENTATION-ROADMAP.md) for the
+full phased plan.

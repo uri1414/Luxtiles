@@ -130,6 +130,33 @@ header.site.scrolled{box-shadow:0 8px 30px -22px rgba(0,0,0,.9)}
 .nav-links a{color:var(--nav)}
 .nav-links a:hover{color:var(--gold-light)}
 
+/* Nav dropdown (Applications) */
+.has-dropdown{position:relative}
+.dd-toggle{
+  display:inline-flex;align-items:center;gap:6px;background:none;border:0;cursor:pointer;
+  color:var(--nav);font-family:var(--font-body);font-size:13.5px;letter-spacing:.04em;padding:0;
+}
+.dd-toggle:hover{color:var(--gold-light)}
+.dd-toggle .caret{width:9px;height:9px;transition:transform .2s var(--ease)}
+.dd-toggle[aria-expanded="true"] .caret{transform:rotate(180deg)}
+.dd-panel{
+  position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(-6px);
+  min-width:210px;background:rgba(16,14,11,0.98);backdrop-filter:blur(12px);
+  border:1px solid var(--hair-2);border-radius:var(--radius);padding:8px;
+  display:flex;flex-direction:column;gap:2px;
+  opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s var(--ease),transform .2s var(--ease),visibility .2s;
+  box-shadow:0 20px 50px -20px rgba(0,0,0,.85);z-index:60;
+}
+.has-dropdown:hover .dd-panel,
+.has-dropdown:focus-within .dd-panel,
+.dd-panel.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+.dd-panel a{
+  display:flex;flex-direction:column;gap:2px;padding:9px 12px;border-radius:var(--radius-sm);
+  color:var(--nav);font-size:13.5px;
+}
+.dd-panel a:hover{background:var(--gold-fill);color:var(--gold-light)}
+.dd-panel a small{color:var(--muted);font-size:11px;letter-spacing:.02em}
+
 .burger{display:none;margin-left:auto;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:10px}
 .burger span{width:24px;height:2px;background:var(--gold-soft);border-radius:2px;transition:.3s var(--ease)}
 .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -144,6 +171,8 @@ header.site.scrolled{box-shadow:0 8px 30px -22px rgba(0,0,0,.9)}
 .mobile-menu a{color:var(--nav);font-size:16px;padding:12px 0;border-bottom:1px solid var(--hair)}
 .mobile-menu a:last-child{border-bottom:0}
 .mobile-menu .btn{margin-top:14px}
+.mobile-menu .mm-group{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding:16px 0 4px;border-bottom:0}
+.mobile-menu a.mm-sub{padding-left:14px;font-size:15px;color:var(--muted-3)}
 
 /* ---------- Sections ---------- */
 section{scroll-margin-top:90px}
@@ -285,6 +314,90 @@ footer.site .fright a{color:var(--muted)}
 footer.site .fright a:hover{color:var(--gold-light)}
 
 /* ============================================================
+   Interior pages (service / hub / contact)
+   ============================================================ */
+.breadcrumb{padding:22px 0 0}
+.breadcrumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:12px;letter-spacing:.06em;color:var(--muted)}
+.breadcrumb li{display:flex;align-items:center;gap:8px}
+.breadcrumb li+li::before{content:"›";color:var(--hair-3);color:rgba(201,165,92,0.5)}
+.breadcrumb a{color:var(--muted)}
+.breadcrumb a:hover{color:var(--gold-light)}
+.breadcrumb [aria-current="page"]{color:var(--gold-soft)}
+
+.page-hero{padding:34px 0 20px;display:flex;flex-direction:column;gap:18px;max-width:60ch}
+.page-hero h1{font-size:clamp(36px,5vw,56px)}
+.page-hero .lead{font-size:17px;line-height:1.7;color:var(--muted-3)}
+.page-hero .hero-actions{margin-top:2px}
+
+/* Two-column: content + sticky aside */
+.page-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:56px;align-items:start;padding:24px 0 88px}
+.prose{display:flex;flex-direction:column;gap:22px;min-width:0}
+.prose h2{font-size:32px;margin-top:14px}
+.prose h3{font-size:20px;font-family:var(--font-body);font-weight:600;color:var(--heading);letter-spacing:.01em}
+.prose p{font-size:16px;line-height:1.75;color:var(--muted-3)}
+.prose p strong{color:var(--text);font-weight:600}
+.prose a{border-bottom:1px solid var(--edge)}
+.divider-rule{height:1px;background:var(--hair);border:0;margin:6px 0}
+
+/* Checklist */
+.check{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px;margin-top:4px}
+.check li{position:relative;padding-left:30px;font-size:15px;line-height:1.5;color:var(--muted-3)}
+.check li::before{
+  content:"";position:absolute;left:0;top:2px;width:18px;height:18px;border-radius:50%;
+  background:var(--gold-fill);border:1px solid var(--edge);
+}
+.check li::after{content:"";position:absolute;left:6px;top:6px;width:6px;height:9px;border:solid var(--gold-soft);border-width:0 2px 2px 0;transform:rotate(45deg)}
+
+/* Material / option cards */
+.opt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.opt-card{border:1px solid var(--hair-2);border-radius:3px;padding:20px;background:var(--gold-fill);display:flex;flex-direction:column;gap:7px}
+.opt-card .n{font-family:var(--font-display);font-size:22px;color:var(--gold-light)}
+.opt-card .d{font-size:14px;line-height:1.55;color:var(--muted-2)}
+
+/* FAQ (native details) */
+.faq{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--hair)}
+.faq details{border-bottom:1px solid var(--hair)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:20px 40px 20px 0;position:relative;
+  font-size:17px;color:var(--heading);font-family:var(--font-body);font-weight:500;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-size:22px;color:var(--gold-soft);transition:transform .2s var(--ease)}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 0 22px;font-size:15.5px;line-height:1.75;color:var(--muted-3);max-width:70ch}
+
+/* Sticky quote aside */
+.aside-card{
+  position:sticky;top:110px;border:1px solid var(--hair-3);border-radius:var(--radius);
+  background:var(--gold-fill);padding:26px;display:flex;flex-direction:column;gap:16px;
+}
+.aside-card h3{font-family:var(--font-display);font-size:24px;color:var(--heading);font-weight:500}
+.aside-card p{font-size:14px;line-height:1.6;color:var(--muted-2)}
+.aside-card .btn{width:100%}
+.aside-card .callrow{display:flex;align-items:center;gap:12px;border-top:1px solid var(--hair);padding-top:16px}
+.aside-card .callrow .ic{width:40px;height:40px;border:1px solid var(--edge);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-soft);flex:none}
+.aside-card .callrow .ic svg{width:17px;height:17px}
+.aside-card .callrow .k{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.aside-card .callrow .v{font-size:16px;color:var(--text)}
+
+/* Related links */
+.related{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.related a{
+  border:1px solid var(--hair-2);border-radius:3px;padding:20px;display:flex;flex-direction:column;gap:6px;
+  background:rgba(201,165,92,0.03);transition:border-color .2s var(--ease),background .2s var(--ease);
+}
+.related a:hover{border-color:var(--edge);background:var(--gold-fill)}
+.related a .n{font-family:var(--font-display);font-size:21px;color:var(--gold-light)}
+.related a .d{font-size:13.5px;color:var(--muted-2);line-height:1.5}
+
+/* CTA strip */
+.cta-strip{background:var(--band-grad)}
+.cta-strip .inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:30px 0}
+.cta-strip .t{font-family:var(--font-display);font-size:26px;color:var(--ink);font-weight:600;max-width:24ch}
+.cta-strip .btn{background:var(--ink);color:var(--gold-light);border-color:var(--ink)}
+.cta-strip .btn:hover{filter:brightness(1.15);color:var(--gold-light)}
+
+/* ============================================================
    Responsive
    ============================================================ */
 @media (max-width:1000px){
@@ -295,6 +408,8 @@ footer.site .fright a:hover{color:var(--gold-light)}
   .hero-media .offset{inset:14px 0 -14px 14px}
   .quote-grid{grid-template-columns:1fr;gap:40px}
   .grid-4{grid-template-columns:repeat(2,1fr)}
+  .page-grid{grid-template-columns:1fr;gap:36px;padding-bottom:64px}
+  .aside-card{position:static;top:auto}
 }
 @media (max-width:820px){
   .nav-links{display:none}
@@ -312,6 +427,8 @@ footer.site .fright a:hover{color:var(--gold-light)}
   .mosaic{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,200px)}
   .mosaic .tile.tall{grid-row:span 1;grid-column:span 2}
   .form-card{padding:24px}
+  .check{grid-template-columns:1fr}
+  .cta-strip .inner{flex-direction:column;align-items:flex-start;gap:16px}
 }
 @media (max-width:520px){
   .grid-4{grid-template-columns:1fr}

@@ -30,6 +30,36 @@
     });
   }
 
+  /* ---------- Nav dropdown (click/keyboard; hover is CSS-only) ---------- */
+  document.querySelectorAll('.dd-toggle').forEach(function (toggle) {
+    var panel = document.getElementById(toggle.getAttribute('aria-controls'));
+    if (!panel) return;
+    var wrap = toggle.closest('.has-dropdown');
+    var setOpen = function (open) {
+      panel.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    // Close on outside click / Escape / focus leaving the group
+    document.addEventListener('click', function (e) {
+      if (wrap && !wrap.contains(e.target)) setOpen(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { setOpen(false); }
+    });
+    if (wrap) {
+      wrap.addEventListener('focusout', function () {
+        // defer so the newly-focused element is known
+        setTimeout(function () {
+          if (!wrap.contains(document.activeElement)) setOpen(false);
+        }, 0);
+      });
+    }
+  });
+
   /* ---------- Sticky header shadow ---------- */
   var header = document.getElementById('site-header');
   if (header) {
