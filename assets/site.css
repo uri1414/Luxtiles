@@ -223,7 +223,7 @@ h1.title{font-size:64px;line-height:1.06;letter-spacing:.01em;color:var(--headin
 /* ---------- Hero ---------- */
 .hero{
   position:relative;
-  padding:72px 0 88px;
+  padding-block:72px 88px;
   display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;align-items:center;
 }
 .hero-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
@@ -245,7 +245,7 @@ h1.title{font-size:64px;line-height:1.06;letter-spacing:.01em;color:var(--headin
 
 /* ---------- Commercial ---------- */
 .value-band{background:var(--band-grad)}
-.value-band .inner{display:grid;grid-template-columns:1fr 1px 1fr;gap:32px;align-items:center;padding:26px 0}
+.value-band .inner{display:grid;grid-template-columns:1fr 1px 1fr;gap:32px;align-items:center;padding-block:26px}
 .value-band .divider{background:rgba(22,19,16,0.35);height:100%;min-height:34px}
 .value-band .vb-title{font-size:17px;font-weight:700;letter-spacing:.06em;color:var(--ink);text-transform:uppercase}
 .value-band .vb-sub{font-size:13.5px;color:var(--ink-2)}
@@ -423,7 +423,7 @@ footer.site .fright a:hover{color:var(--gold-light)}
    ============================================================ */
 @media (max-width:1000px){
   h1.title{font-size:52px}
-  .hero{grid-template-columns:1fr;gap:40px;padding:56px 0 64px}
+  .hero{grid-template-columns:1fr;gap:40px;padding-block:56px 64px}
   .hero-media{order:-1}
   .hero-media .frame{height:400px}
   .hero-media .offset{inset:14px 0 -14px 14px}
