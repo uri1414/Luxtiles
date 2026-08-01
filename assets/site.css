@@ -240,8 +240,13 @@ h1.title{font-size:64px;line-height:1.06;letter-spacing:.01em;color:var(--headin
 
 /* ---------- Applications grid ---------- */
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.app-card{position:relative;height:340px}
-.app-card .frame{position:absolute;inset:0;border:1px solid var(--hair-2)}
+.app-card{position:relative;height:340px;display:block;text-decoration:none;transition:transform .3s var(--ease)}
+.app-card .frame{position:absolute;inset:0;border:1px solid var(--hair-2);transition:box-shadow .3s var(--ease),border-color .3s var(--ease)}
+.app-card .img-fill{transition:transform .5s var(--ease)}
+.app-card:hover{transform:translateY(-4px)}
+.app-card:hover .frame{box-shadow:var(--card-shadow-lg);border-color:var(--edge)}
+.app-card:hover .img-fill{transform:scale(1.05)}
+.app-card:hover .chip{background:var(--card)}
 
 /* ---------- Commercial ---------- */
 .value-band{background:var(--band-grad)}
