@@ -389,6 +389,11 @@ footer.site .fright a:hover{color:var(--gold-light)}
 .aside-card .callrow .k{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 .aside-card .callrow .v{font-size:16px;color:var(--text)}
 
+/* Project feature shot (real photo, landscape crop) */
+.feature-shot{margin:0 0 6px;border:1px solid var(--hair);border-radius:var(--radius);overflow:hidden;box-shadow:var(--card-shadow);background:var(--card)}
+.feature-shot img{width:100%;height:clamp(220px,30vw,340px);object-fit:cover;object-position:center 16%;display:block}
+.feature-shot figcaption{font-size:12px;letter-spacing:.06em;color:var(--muted);padding:10px 14px}
+
 /* Related links */
 .related{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .related a{
